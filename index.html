@@ -1,0 +1,333 @@
+
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>
+		   filters
+		</title>
+		
+		<link rel="icon" href="img/calicon.png" type="image/png" sizes="16x16">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/navbar.css"> 
+		<link rel="stylesheet" href="css/filters.css"> 
+		<link rel="stylesheet" href="css/footer.css"> 
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    </head>
+    <style>
+			img{
+			image-rendering: -moz-crisp-edges !important;       
+			image-rendering:   -o-crisp-edges !important;       
+			image-rendering: -webkit-optimize-contrast !important;
+			image-rendering: crisp-edges !important;
+			-ms-interpolation-mode: nearest-neighbor !important;
+		}
+    </style>
+	
+    <body>
+		<header class="header" id="header">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid navbarfild">
+
+				  <div class="navbar-header">
+					<button type="button" class="navbar-toggle plus collapsed" data-toggle="collapse" data-target="#navbar-collapse-plus">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="img/logo/Asset 1SVG.svg"></a>
+				  </div>
+			  
+				  <!-- Collect the nav links, forms, and other content for toggling -->
+				  <div class="collapse navbar-collapse" id="navbar-collapse-plus">
+					<ul class="nav navbar-nav nav-left-items">
+					  <li class="active"><a href="#">Propety <span class="sr-only">(current)</span></a></li>
+					  <li><a href="#">Finance</a></li>
+					  <li><a href="#">Education Portal</a></li>
+					  <li><a href="#">For Rent</a></li>
+					  <li><a href="#">Price Atlas</a></li>
+					  <li><a href="#">Free Webinar</a></li>
+					  <li class="premium"><a href="#">Prenium</a></li>
+					</ul>
+
+					<div class="nav navbar-nav navbar-right " id="prfilere">
+						<div class="media">
+							<div class="media-left">
+							  <a href="#">
+								<img class="media-object" src="img/profile/1.jpg" alt="...">
+							  </a>
+							</div>
+							<div class="media-body">
+							  <h4 class="media-heading">Hallo!</h4>
+							  <div class="btn-group" role="group" aria-label="...">
+								<a href="" class="btn btn-default">Anmelden</a>
+								<a href="" class="btn btn-default">Registration</a>
+							  </div>
+							</div>
+						  </div>
+					</div>
+				  </div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			  </nav>
+		</header>
+        <br><br><br><br>
+		<section class="filtersmap">
+            <div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 googlemap">
+						<div clalss="jumbotron googlejum" style=" padding: 0px 0px 0px 20px;" id="googlpmp">
+                            <div id="map" class=""></div>
+						</div>
+						
+					</div>
+					<div class="col-md-6 main-form">
+						<div class="jumbotron lifejum">
+						<div class="row address">
+							
+							<div class="col-sm-6" style="padding-left: 6px;padding-right: 6px;">
+							  <input type="text" class="form-control" placeholder="Address">
+							  <i class="bi bi-search"></i>
+							</div>
+							<div class="col-sm-6"  style="padding-left: 6px;padding-right: 6px;">
+							  <input type="text" class="form-control" placeholder="locatin">
+							  <i class="bi bi-geo-alt-fill"></i>
+							</div>
+						</div>
+						<br>
+						<div class="row selectloc">
+							
+							<div class="col-sm-6"  style="padding-left: 6px;padding-right: 6px;">
+								<label>Objektart</label>
+								<div class="custom-select" style="width:100%;">
+									<select>
+										<option value="">- Objektart -</option>
+										<option value="Eigentumswohnungen">Eigentumswohnungen</option>
+										<option value="Mehrfamilienhäuser">Mehrfamilienhäuser</option>
+										<option value="Wohn-/ Geschäftshäuser">Wohn-/ Geschäftshäuser</option>
+										<option value="Gewerbegrundstücke">Gewerbegrundstücke</option>
+										<option value="Einfamilienhäuser">Einfamilienhäuser</option>
+										<option value="Unbebaute Grundstücke">Unbebaute Grundstücke</option>
+										<option value="Land- und forstwirtschaftlich genutzte Flächen">Land- und forstwirtschaftlich genutzte Flächen</option>
+										<option value="Baugrundstücke">Baugrundstücke</option>
+										<option value="KFZ-Stellplatz/ Garagen">KFZ-Stellplatz/ Garagen</option>
+										<option value="Zweifamilienhaus">Zweifamilienhaus</option>
+										<option value="Sonstige">Sonstige</option>
+									</select>
+								  </div>
+							</div>
+							<div class="col-sm-6 leftdiv"  style="padding-left: 6px;padding-right: 6px;">
+								<label>Wertgrenze</label>
+								<div class="custom-select" style="width:100%;">
+									<select>
+										<option value="">- Wertgrenze -</option>
+										<option value="5/10">5/10</option>
+										<option value="7/10">7/10</option>
+										<option value="Wertgrenzen entfallen">Wertgrenzen entfallen</option>
+									</select>
+								  </div>
+							</div>
+						</div>
+						<br>
+						<div class="row bisvon">
+							<div class="col-md-6" style="padding-left: 16px;padding-right: 20px;" >
+                                <div class="row">
+									<label>Wohnfläche</label>
+									<br>
+                                    <div class="col-sm-6"  style="padding-left: 6px;padding-right: 6px;">
+										<input type="number" class="form-control" placeholder="Von">
+									</div>
+									<div class="col-sm-6"  style="padding-left: 6px;padding-right: 6px;">
+                                        <input type="number" class="form-control" placeholder="Bis">
+									</div>
+
+								</div>
+							</div>
+							<div class="col-md-6" style="padding-left: 20px;padding-right: 16px;" >
+								<div class="row">
+									<label>Zimmer</label>
+									<br>
+                                    <div class="col-sm-6"  style="padding-left: 6px;padding-right: 6px;">
+										<input type="number" class="form-control" placeholder="Von">
+									</div>
+									<div class="col-sm-6"  style="padding-left: 6px;padding-right: 6px;">
+                                        <input type="number" class="form-control" placeholder="Bis">
+									</div>
+
+								</div>
+							</div>
+						</div>
+                        <br>
+						<div class="row suchen">
+                           <div class="col-md-12" style="padding-left: 6px;padding-right: 6px;">
+							   <button class="btn btn-primary btn-block">Suchen</button>
+						   </div>
+						</div>
+						</div>
+                   
+					  <div class="row section-5">
+                         <div class="col-md-12">
+							<a style="text-decoration:none;" href="#">
+								<div class="thumbnail" data-aos="fade-up" data-aos-easing="linear"
+								data-aos-duration="500">
+									<p class="all-btn-p"><a href="#" class="btn all-btn btn-default" role="button">1.2 km away</a></p>
+									<p class="all-btn-p-right"><a href="#" class="btn all-btn btn-default" role="button">For sell</a></p>
+									<img class="main-image" src="img/apert/1.jpg" alt="...">
+									<div class="caption">
+										<div class="main-h">
+											<img  src="img/apert/man.jpg" alt="...">
+										   
+											<h3><i class="bi bi-geo-alt"></i>Knightsbridge</h3>
+											<h4>$2,500</h4>
+											<h5>Apartment London</h5>
+											<div class="name-bottom">
+												<center>
+												<ul>
+													<li><span>2 <i class="fa fa-bed"></i></span><br><span>Beadroom</span></li>
+													<li><span>2 <i class="fa fa-bath"></i></span><br><span>Bathroom</span></li>
+													<li><span>1776 <i class="fa fa-square-o"></i></span><br><span>Squre Ft</span></li>
+												</ul></center>
+											</div>
+											<p>Beautiful Huge I Familly House In Heart Of Wbstbury Newly Renovated With Furniture</p>
+											
+										</div>
+										<div class="all-re" id="acolor">
+											<p class="acolor"><i class="bi bi-fullscreen-exit"></i></p>
+											  <p class="acolor"><i class="bi bi-heart"></i></p>
+											  <p class="acolor"><i class="bi bi-plus-circle"></i></p>
+										</div>
+									</div>
+								</div>
+							</a>
+						 </div>
+					  </div>
+					</div>
+
+				</div>
+				
+			</div>
+		</section>
+
+		
+            <script src="js/bootstrap.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+            <script src="js/bootstrap.min.js"></script>
+		
+			<script src="js/index.js"></script>
+							<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+			<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+			<script
+			  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&channel=2"
+			  async
+			></script>
+			<script>
+				var x, i, j, l, ll, selElmnt, a, b, c;
+				/*look for any elements with the class "custom-select":*/
+				x = document.getElementsByClassName("custom-select");
+				l = x.length;
+				for (i = 0; i < l; i++) {
+				  selElmnt = x[i].getElementsByTagName("select")[0];
+				  ll = selElmnt.length;
+				  /*for each element, create a new DIV that will act as the selected item:*/
+				  a = document.createElement("DIV");
+				  a.setAttribute("class", "select-selected");
+				  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+				  x[i].appendChild(a);
+				  /*for each element, create a new DIV that will contain the option list:*/
+				  b = document.createElement("DIV");
+				  b.setAttribute("class", "select-items select-hide");
+				  for (j = 1; j < ll; j++) {
+					/*for each option in the original select element,
+					create a new DIV that will act as an option item:*/
+					c = document.createElement("DIV");
+					c.innerHTML = selElmnt.options[j].innerHTML;
+					c.addEventListener("click", function(e) {
+						/*when an item is clicked, update the original select box,
+						and the selected item:*/
+						var y, i, k, s, h, sl, yl;
+						s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+						sl = s.length;
+						h = this.parentNode.previousSibling;
+						for (i = 0; i < sl; i++) {
+						  if (s.options[i].innerHTML == this.innerHTML) {
+							s.selectedIndex = i;
+							h.innerHTML = this.innerHTML;
+							y = this.parentNode.getElementsByClassName("same-as-selected");
+							yl = y.length;
+							for (k = 0; k < yl; k++) {
+							  y[k].removeAttribute("class");
+							}
+							this.setAttribute("class", "same-as-selected");
+							break;
+						  }
+						}
+						h.click();
+					});
+					b.appendChild(c);
+				  }
+				  x[i].appendChild(b);
+				  a.addEventListener("click", function(e) {
+					  /*when the select box is clicked, close any other select boxes,
+					  and open/close the current select box:*/
+					  e.stopPropagation();
+					  closeAllSelect(this);
+					  this.nextSibling.classList.toggle("select-hide");
+					  this.classList.toggle("select-arrow-active");
+					});
+				}
+				function closeAllSelect(elmnt) {
+				  /*a function that will close all select boxes in the document,
+				  except the current select box:*/
+				  var x, y, i, xl, yl, arrNo = [];
+				  x = document.getElementsByClassName("select-items");
+				  y = document.getElementsByClassName("select-selected");
+				  xl = x.length;
+				  yl = y.length;
+				  for (i = 0; i < yl; i++) {
+					if (elmnt == y[i]) {
+					  arrNo.push(i)
+					} else {
+					  y[i].classList.remove("select-arrow-active");
+					}
+				  }
+				  for (i = 0; i < xl; i++) {
+					if (arrNo.indexOf(i)) {
+					  x[i].classList.add("select-hide");
+					}
+				  }
+				}
+				/*if the user clicks anywhere outside the select box,
+				then close all select boxes:*/
+				document.addEventListener("click", closeAllSelect);
+				</script>
+<script>
+	function initMap() {
+  const myLatLng = { lat: -25.363, lng: 131.044 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: myLatLng,
+  });
+
+  new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "Hello World!",
+  });
+}
+</script>
+
+			
+				</body>
+    </body>
+</html>
